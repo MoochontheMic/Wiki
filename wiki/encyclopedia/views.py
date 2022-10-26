@@ -43,6 +43,7 @@ def index(request):
         "searchEntries": SearchEntries()
     })
 
+
 def entry(request, title):
     if request.method == "POST":
         query = SearchEntries(request.POST)
